@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Education from './Education';
+import Experience from './Experience';
+import Skills from './Skills';
 
 class Resume extends Component {
     render() {
@@ -33,7 +36,56 @@ class Resume extends Component {
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education:</h2>
-
+                        <Education
+                            startYear={2012}
+                            endYear={2016}
+                            schoolName={"My Uni"}
+                            schoolDescription={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        />
+                        <Education
+                            startYear={2016}
+                            endYear={2018}
+                            schoolName={"My Uni"}
+                            schoolDescription={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        />
+                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <h2>Experience</h2>
+                        <Experience
+                            startYear={2016}
+                            endYear={2018}
+                            jobName={"TravelBird"}
+                            jobDescription={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        />
+                        <Experience
+                            startYear={2016}
+                            endYear={2018}
+                            jobName={"Abercrombie and Fitch"}
+                            jobDescription={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        />
+                        <Experience
+                            startYear={2016}
+                            endYear={2018}
+                            jobName={"Salt"}
+                            jobDescription={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        />
+                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <h2> Skills</h2>
+                        <Skills
+                            skill={"javascript"}
+                            progress={100}
+                            />
+                            <Skills
+                            skill={"html / css"}
+                            progress={100}
+                            />
+                            <Skills
+                            skill={"NodeJS"}
+                            progress={80}
+                            />
+                            <Skills
+                            skill={"React"}
+                            progress={90}
+                            />
                     </Cell>
                 </Grid>
             </div>
