@@ -1,70 +1,89 @@
-body { 
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*---------------- MAIN ----------------*/
+body {
+  height: 100%;
+  background: #d3cce3; /* fallback for old browsers */
 }
 
-.header-color { 
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*----------------    NAVBAR    ----------------*/
+
+.nav-translusent {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-bottom: 2px solid #302b63;
 }
 
-.projects-grid {
-  display: flex;
+/*---------------- LANDING PAGE ----------------*/
+
+.bg {
+  background-image: url("./static/coding-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: "100%";
 }
 
 .landing-grid {
+  display: flex;
   text-align: center;
-  position: fixed;
+  color: #fff;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
+.landing-grid h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+.landing-grid p {
+  align-self: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 .avatar-img {
-  height: 250px;
-  padding-top: 5em;
+  margin-top: 25px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
-.banner-text {
-  background-color: black;
-  opacity: 1.8;
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.banner-text h1 {
-  font-size: 66px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.banner-text hr {
-  border-top: 5px dotted #fff;
+.landing-grid hr {
+  border-top: 2px solid #fff;
   margin: auto;
   width: 50%;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px;
+}
+/*---------------- SOMETHING ELSE  ----------------*/
 
 .banner-text p {
   color: #fff;
   font-size: 20px;
   padding: 1em;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
-
-.social-links  i {
-  color: #fff;
-  font-size: 5em;
-  padding: 8px;
 }
 
 .contact-body {
@@ -87,11 +106,11 @@ body {
 }
 
 .contact-grid h2 {
-  font-family: 'Anton', 'sans-serif';
+  font-family: "Anton", "sans-serif";
 }
 
 .contact-grid p {
-  font-family: 'Oxygen', 'sans-serif';
+  font-family: "Oxygen", "sans-serif";
   font-weight: bold;
 }
 
@@ -110,4 +129,28 @@ body {
   background: #27221f;
   color: #fff;
   padding: 2em;
+}
+
+/* ------ PROJECTS ------ */
+
+.projects-grid {
+  display: flex;
+}
+
+/*------ FOOTER -------*/
+
+.footer {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
