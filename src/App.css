@@ -1,10 +1,11 @@
 /*---------------- MAIN ----------------*/
 body {
   height: 100%;
-  background: #d3cce3; /* fallback for old browsers */
+  margin: 0;
+  padding: 0;
 }
 
-/*----------------    NAVBAR    ----------------*/
+/*----------------    NAVBAR & FOOTER   ----------------*/
 
 .bg-nav {
   background: #0F2027;  /* fallback for old browsers */
@@ -12,11 +13,10 @@ background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Ch
 background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.nav-translusent {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*---------------- LANDING PAGE ----------------*/
